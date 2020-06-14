@@ -1,0 +1,85 @@
+body
+{
+  background-color: black;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+}
+h1 {
+  color: white;
+  font-size: 50px
+}
+h2 {
+  color: white;
+  font-size: 30px
+}
+.image1 {
+  width:1000px;
+  height:250px;
+  padding-left: 250px;
+}
+
+ul {
+  color: white;
+}
+li {
+  padding: 10px 20px 10px 1px;
+  font-size: 30px
+}
+.one {
+  list-style: circle;
+}
+/* unvisited link */
+a:link {
+  color: #204051;
+}
+
+/* visited link */
+a:visited {
+  color: #6a197d;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
